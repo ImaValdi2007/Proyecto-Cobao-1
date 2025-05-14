@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fefefe;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    height: 60px;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: #f44336;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.ventajas h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f44336;
+}
+
+.ventajas ul {
+    list-style: square inside;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.ventajas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.ventajas th, .ventajas td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .contenedor-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul.menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.menu li {
+        width: 100%;
+    }
+
+    nav ul.menu li a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+}
